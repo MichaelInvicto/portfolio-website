@@ -12,21 +12,23 @@ body {
     font-family: 'Lato', sans-serif;
 }
 
-#page-wraper {
-/*     background: url(../images/page-bg.jpg) no-repeat center center fixed;
+/* #page-wraper {
+    background: url(../images/page-bg.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    width: 100%; */
-  background-image: url(../images/page-bg.jpg) !important;
+    width: 100%;
+} */
+
+#page-wraper {
+  background-image: url(../images/page-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
   background-position: center;
   background-attachment: fixed;
 }
-
 
 /* Basic */
 
@@ -231,7 +233,7 @@ html {
   -webkit-overflow-scrolling: touch;
   background-color: #a43f49;
   box-sizing: border-box;
-  height: 100vh;  
+  height: 100vh;
   max-height: 100vh !important;
   max-width: 80vw !important;
   min-width: 45px !important;
@@ -240,7 +242,7 @@ html {
   overflow-y: auto !important;
   padding: 0;
   position: fixed !important;
-  top: calc(0px);  
+  top: calc(0px);
   width: 20%;
   will-change: transform;
   z-index: 9999 !important;
@@ -310,7 +312,6 @@ html {
     font-weight: 700;
     color: #fff;
 }
-
 .section-heading button {
   margin-bottom: 40px;
 }
@@ -475,7 +476,25 @@ button:hover {
 .service-item:hover .fourth-service-icon {
     background-image: url(../images/fourth-main-icon.png);
 }
-
+.service-item i {
+  font-size: 4.7rem;
+}
+.service-item:hover i {
+    color: maroon;
+}
+.service-item .next {
+  border: 2px solid #000;
+  border-radius: 50%;
+  width: 75px;
+  text-align: center;
+  background-color: #000;
+}
+.service-item:hover .next {
+  background-color: #fff;
+}
+.service-item:hover .next {
+  color: #000 !important;
+}
 
 /* My Work */
 
@@ -639,6 +658,39 @@ figure.snip1321.hover:after {
   opacity: 0.9;
 }
 
+.skills-used {
+  border: 3px solid #fff;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: row;
+  padding: 5px;
+  margin-bottom: 20px;
+}
+.skills-used ul {
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  min-height: 0rem;
+}
+.skill {
+  padding: 0.125rem 0.625rem;
+  background-color: #fff;
+  color: maroon;
+  font-size: .8rem;
+  border-radius: 3.125rem;
+  margin: 0.4375rem 0.625rem 0.4375rem 0rem;
+  transition: .5s;
+  text-transform: uppercase;
+}
+.skill:hover {
+  transition: .5s;
+  color: #fff;
+  background-color: maroon;
+}
+.project-links {
+  display: flex;
+  justify-content: space-between;
+}
 
 /* Contact Me */
 
@@ -700,7 +752,7 @@ section.contact-me {
     }
 }
 
-@media screen and (max-width: 1680px) and (min-width: 846px) { 
+@media screen and (max-width: 1680px) and (min-width: 846px) {
     .menu .social-network ul li a {
         width: 36px;
         height: 36px;
@@ -752,15 +804,15 @@ section.contact-me {
 #menu-toggle,
 #menu-close {
     display: none;
-}  
+}
 
-@media screen and (max-width: 845px) {        
+@media screen and (max-width: 845px) {
     #menu-toggle,
     #menu-close {
         display: inline-block;
-    }    
+    }
 
-    .menu {        
+    .menu {
         width: 320px;
         -webkit-transform: translateX(-100%) !important;
         transform: translateX(-100%) !important;
@@ -770,7 +822,7 @@ section.contact-me {
     }
 
     .menu .image {
-        margin-top: 40px;        
+        margin-top: 40px;
     }
 
     .menu .image img {
