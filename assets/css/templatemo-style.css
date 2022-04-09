@@ -22,7 +22,7 @@ body {
 } */
 
 #page-wraper {
-  background-image: url(../images/page-bg.jpg);
+  background-image: url(../images/page-bg.jpg) !important;
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
